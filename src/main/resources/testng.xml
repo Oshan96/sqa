@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="ActiTIME suite" verbose="1" >
+
+  <listeners>
+  	<listener class-name = "com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>	
+  
+  <test name="ActiTIME Application Test" >
+    <classes>
+       <class name="com.app.qa.tests.LoginPageTest"></class>
+       <class name="com.app.qa.tests.HomePageTest"></class>
+    </classes>
+  </test>
+</suite>
